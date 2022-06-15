@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    
+</head>
+<body>
+    <div class="contenedor_padre">
+        <div class="logo">
+            <img id="img_logo" src="imagenes/log.png" alt="logo">
+        </div>
+           
+        <textarea type="text" name="texto" id="texto_encriptar"  placeholder="Ingrese el texto aqui"></textarea>
+        <div class="alert">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+            </svg>
+            <p class="p_alerta">  Solo letras minúsculas y sin acentos</p>
+        </div>
+            <div class="buttons">
+            <button type="submit" class = "button_encriptar" id="botonencriptar" onclick="encriptar()"><p class ="button_tex_encr">Encriptar</p> </button>
+            <button type="submit" class ="button_desencriptar" onclick="desencriptar()"><p class="button_tex_des">Desencriptar</p></button>
+        </div>
+        
+    
+
+        <div class="contenedor_hijo">
+            <p  id="resultado"></p>
+            <img class="imag1" id="img_muneco" src="imagenes/1.png" alt="">
+            
+            <div class="contenedor-hijo2">
+                <h2 id="h2_ningun">Ningún mensaje fue encontrado</h2>
+                <p id="ingrese-texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button id="copiar" type="button" onclick="copiar()"> <p class="p-copy"> Copiar </p></button>
+            </div>
+          
+            
+        </div>
+    
+    </div>
+   
+   
+
+        <script src="encriptador.js"></script>
+
+        <footer>
+            <p class="realizado">Realizado por Maria Soledad Catalano - Para Curso Alura 2022</p>   
+        </footer>
+</body>
+</html>
